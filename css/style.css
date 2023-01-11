@@ -1,9 +1,106 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Anton&family=Roboto+Condensed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+.toggleBackground{
+  background: #1b120f;
+}
+#logo {
+  font-size: 40px;
+  margin-left: 40px;
+  color: #fa7d09;
+  font-family: "Amita", cursive;
+}
+#logo-span {
+  color: #ff4301;
+}
+#list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.list-item {
+  margin: 10px;
+}
+.list-item a {
+  text-decoration: none;
+  color: #fa7d09;
+}
+.list-item a:hover {
+  color: #ff4301;
+}
+/* General Section */
+.section {
+  width: 100%;
+  height: 100vh;
+}
+/* Home Section */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../img/chai-background.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#heading {
+  font-size: 60px;
+  color: #fa7d09;
+  font-family: "Amita", cursive;
+  transition:0.6s ease;
+}
+#heading-span {
+  color:#ff4301;
+}
+#line {
+  width: 300px;
+  height:2px;
+  background-color:white;
+}
+#sub-heading {
+  font-size: 20px;
+  color: #fa7d09;
+  margin: 10px;
+  transition:0.6s ease;
+}
+#tel {
+  background: white;
+  border-radius: 100%;
+  transition:0.6s ease;
+  padding: 8px;
+}
+#tel a {
+  color: #ff4301;
+  font-size: 30px;
+  text-decoration: none;
+}
+#tel:hover {
+  background:#ff4301;
+  transition:0.6s ease;
+}
+#tel:hover a {
+  color:white;
+  transition:0.6s ease;
 }
