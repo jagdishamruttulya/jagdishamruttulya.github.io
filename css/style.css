@@ -21,9 +21,11 @@ body {
   align-items: center;
   position: fixed;
   width: 100%;
+  transition:0.6s ease;
 }
 .toggleBackground{
   background: #1b120f;
+  transition:0.6s ease;
 }
 #logo {
   font-size: 40px;
@@ -103,4 +105,26 @@ body {
 #tel:hover a {
   color:white;
   transition:0.6s ease;
+}
+/* Media Queries */
+@media {
+  #logo{
+    font-size:20px;
+    margin-left:10px;
+  }
+  #heading{
+    font-size:30px;
+  }
+  #line{
+    width:150px;
+  }
+  #sub-heading{
+    font-size:10px;
+  }
+  #tel {
+    padding:3px;
+  }
+  #tel a{
+    font-size:10px;
+  }
 }

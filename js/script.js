@@ -1,7 +1,7 @@
 const toggleBackground = document.getElementById('navbar'); 
 
 function changeBG() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     toggleBackground.className = "toggleBackground";
   } else {
     toggleBackground.className = "";
