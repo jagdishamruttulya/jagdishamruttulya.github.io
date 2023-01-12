@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagdish Amruttulya</title>
-    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav id="navbar">
-        <h2 id="logo"><span id="logo-span">जगदीश</span> अमृतुल्य</h2>
-        <!-- <img src="./img/favicon.png" alt="Jagdish Amruttulya"> -->
-        <ul id="list">
-            <li class="list-item"><a href="#home">Home</a></li>
-            <li class="list-item"><a href="#contact">Contact Us</a></li>
-            <li class="list-item"></li>
-        </ul>
-    </nav>
+        <!-- dash-menu -->
+        <div class="static-menu" id="static-menu" hidden>
+            <ul class="static-ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <nav id="navbar">
+            <h2 id="logo"><span id="logo-span">जगदीश</span> अमृततुल्य</h2>
+            <!-- <img src="./img/favicon.png" alt="Jagdish Amruttulya"> -->
+            <ul id="list">
+                <li class="list-item"><a href="#home">Home</a></li>
+                <li class="list-item"><a href="#services">Services</a></li>
+                <li class="list-item"><a href="#about-us">About us</a></li>
+                <li class="list-item"><a href="#contact">Contact Us</a></li>
+                
+            </ul>
+            <div class="container" onclick="changeToStaticMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
     <!-- Home Section -->
     <section class="section" id="home">
-        <h1 id="heading"><span id="heading-span">जगदीश</span> अमृतुल्य</h1>
+        <h1 id="heading"><span id="heading-span">जगदीश</span> अमृततुल्य</h1>
         <div id="line"> </div>
         <h3 id="sub-heading">चव आमची, आवड तुमची</h3>
         <div id="tel"><a href="tel:9403255880"><i class="fa-solid fa-phone"></i></a></div>
     </section>
+    <section class="section" id="services"> </section>
+    <section class="section" id="about-us"> </section>
     <section class="section" id="contact"> </section>
     <!-- Script -->
     <script src="./js/script.js"></script>

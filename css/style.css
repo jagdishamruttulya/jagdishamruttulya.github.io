@@ -14,6 +14,63 @@ body {
   width: 100%;
   max-width: 100%;
 }
+/*Static menu*/
+.static-menu{
+	height:100vh;
+	width:50vh;
+	text-align: center;
+	background: rgba(27,18,15,0.7);
+	position:fixed;
+	right:0;
+  padding-top: 20%;
+}
+.static-ul{
+	list-style: none;
+	font-size: 24px;
+	color: white
+}
+.static-ul li{
+	margin-bottom:30px;
+}
+.static-ul a{
+	text-decoration: none;
+	color: #fff;
+	transition: 0.45s ease-in-out;
+	font-family: Inconsolata , monospace;
+}
+
+/*Menu Icon*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-right:30px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -59,7 +116,7 @@ body {
 }
 /* Home Section */
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/chai-background.jpg");
   background-size: cover;
   display: flex;
@@ -107,24 +164,38 @@ body {
   transition:0.6s ease;
 }
 /* Media Queries */
-@media {
+@media screen and (max-width:540px){
   #logo{
-    font-size:20px;
-    margin-left:10px;
+    font-size:28px;
+    margin-left:15px;
   }
-  #heading{
-    font-size:30px;
-  }
+
   #line{
     width:150px;
-  }
-  #sub-heading{
-    font-size:10px;
   }
   #tel {
     padding:3px;
   }
   #tel a{
     font-size:10px;
+  }
+}
+@media screen and (min-width:800px){
+	.container{
+		display: none;
+	}
+	.static-menu{
+		display: none;
+	}
+}
+@media screen and (max-width:799px){
+	#list{
+		display: none;
+	}
+  #heading{
+    font-size:40px;
+  }
+  #sub-heading{
+    font-size:15px;
   }
 }
